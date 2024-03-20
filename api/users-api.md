@@ -50,6 +50,8 @@ JSON
     {
     "id": 123,
     "name": "harry",
+    "password": "pbkdf2_sha256$390000$TXnGj7P=",
+    "email": "zevero@example.com"
     "address": "london, UK",
     "created_at": "2024-03-20T18:27:52.659Z",
     "status": true,
@@ -102,6 +104,59 @@ JSON
 
     {
     "message": "Account deletion successful."
+    }
+```
+
+</details>
+
+<details>
+<summary>3. Create a user account.</summary>
+
+## Endpoint
+
+```
+POST    /api/users/
+```
+
+## _Example Request_
+
+```
+
+    let response = await fetch("http://127.0.0.1:8000/users/", {
+    method: "POST",
+    headers: {
+    "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+        username: e.target.user_name.value,
+        password: e.target.user_password.value,
+      }),
+    });
+
+    let data = await response.json();
+    if (response.status === 200) {
+        // Do something
+    }
+
+```
+
+## Request Data
+
+| Parameter | Datatype | Description                   | Required |
+| --------- | -------- | ----------------------------- | -------- |
+| username  | string   | Username of the user account. | Yes      |
+| password  | string   | Password the user account.    | Yes      |
+
+## Response format
+
+JSON
+
+## _Example Response_
+
+```
+
+    {
+    "message": "Account created successful."
     }
 ```
 

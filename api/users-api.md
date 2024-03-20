@@ -6,6 +6,8 @@ Manages user account within the application. Allow creation, modification, delet
 
 Requires JWT token.
 
+## API'S
+
 <details>
 <summary>1. Retrieve user account information.</summary>
 

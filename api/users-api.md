@@ -8,20 +8,23 @@ Requires session cookie or JWT token.
 
 ## Endpoint
 
-1. ```
-   GET    /api/users/<int:user_id>
-   ```
+<details>
+<summary>1. Retrieve user account information.</summary>
+
+```
+GET    /api/users/<int:user_id>
+```
 
 ## _Example Request_
 
 ```
 
-let response = await fetch("http://127.0.0.1:8000/users/${user_id}/", {
-method: "GET",
-headers: {
-"Content-Type": "application/json",
-}
-});
+    let response = await fetch("http://127.0.0.1:8000/users/${user_id}/", {
+    method: "GET",
+    headers: {
+    "Content-Type": "application/json",
+    }
+    });
 
     let data = await response.json();
     if (response.status === 200) {
@@ -51,6 +54,7 @@ JSON
     "created_at": "2024-03-20T18:27:52.659Z",
     "status": true,
     "last_login": "2024-03-20T18:27:52.659Z",
-
-}
+    }
 ```
+
+</details>

@@ -41,6 +41,8 @@ JSON
 
 ## _Example Response_
 
+The reponse is encoded with HS256 Algorithm. To decode, check the [jwt-decode](https://www.npmjs.com/package/jwt-decode) page.
+
 ```
     {
     "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMzU2NjY1MCwiaWF0IjoxNzEwOTc0NjUwLCJqdGkiOiJjMjJiZTBlNWIwY2E0OWFjODU2NmRkYWY5NDRiODBmMCIsInVzZXJfaWQiOjEsInVzZXJuYW1lIjoiYWRtaW4iLCJlbWFpbCI6ImFkbWluQGdtYWlsLmNvbSJ9.OMNTFEWPKgvjt9BkeUu4e_uQNqlFO_ZYYRYSC60iR9E",
@@ -48,5 +50,4 @@ JSON
     "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEwOTc2NDUwLCJpYXQiOjE3MTA5NzQ2NTAsImp0aSI6ImU3NzY4ZTkyNWVhZTQxZjI4YzgyNTA1YzdlMTI4ZDY1IiwidXNlcl9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AZ21haWwuY29tIn0.lGlZuOwLU24DPnYxAHomU0fMIXAz8YFbjeYM8JhrJ2Y"
     }
 
-    The reponse is encoded with HS256 Algorithm. To decode, check the [jwt-decode](https://www.npmjs.com/package/jwt-decode) page.
 ```

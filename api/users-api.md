@@ -163,3 +163,58 @@ JSON
 ```
 
 </details>
+
+<details>
+<summary>4. Update a user account.</summary>
+
+## Endpoint
+
+```
+PUT    /api/users/<int:user_id>
+```
+
+## _Example Request_
+
+```
+
+    let response = await fetch("http://127.0.0.1:8000/users/${user_id}/", {
+    method: "PUT",
+    headers: {
+    "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+        name: e.target.user_name.value,
+        email: e.target.user_email.value,
+        address: e.target.user_address.value,
+      }),
+    });
+
+    let data = await response.json();
+    if (response.status === 200) {
+        // Do something
+    }
+
+```
+
+## Request Data
+
+| Parameter | Datatype | Description                        | Required |
+| --------- | -------- | ---------------------------------- | -------- |
+| name      | string   | Profile name of the user account.  | Yes      |
+| email     | string   | Registered email the user account. | Yes      |
+| address   | string   | Physical address.                  | No       |
+
+## Response format
+
+JSON
+
+## _Example Response_
+
+```
+
+    {
+    "message": "Account updated."
+    }
+```
+
+</details>

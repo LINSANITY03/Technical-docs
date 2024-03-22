@@ -198,11 +198,12 @@ PUT    /api/users/<int:user_id>
 
 ## Request Data
 
-| Parameter | Datatype | Description                        | Required |
-| --------- | -------- | ---------------------------------- | -------- |
-| name      | string   | Profile name of the user account.  | Yes      |
-| email     | string   | Registered email the user account. | Yes      |
-| address   | string   | Physical address.                  | No       |
+| Parameter | Datatype | Description                                | Required |
+| --------- | -------- | ------------------------------------------ | -------- |
+| user_id   | int      | ID of the user retrieving the information. | Yes      |
+| name      | string   | Profile name of the user account.          | Yes      |
+| email     | string   | Registered email the user account.         | Yes      |
+| address   | string   | Physical address.                          | No       |
 
 ## Response format
 

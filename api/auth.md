@@ -51,3 +51,17 @@ The reponse is encoded with HS256 Algorithm. To decode, check the [jwt-decode](h
     }
 
 ```
+
+After decoding the access token.
+
+```
+{
+  "token_type": "access",
+  "exp": 1710976450,
+  "iat": 1710974650,
+  "jti": "e7768e925eae41f28c82505c7e128d65",
+  "user_id": 1,
+  "username": "admin",
+  "email": "admin@gmail.com"
+}
+```

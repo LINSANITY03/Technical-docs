@@ -6,6 +6,7 @@ The purpose of this documentation is to capture the essential aspect of database
 <summary>
     Table Name: User 
 </summary>
+
 User table contains all the information about the user accounts. The purpose of this table is store user information which can be used for login, retreiving sensitive user data.
 
 ## Fields
@@ -25,12 +26,12 @@ User table contains all the information about the user accounts. The purpose of 
 
 ## Primary Key:
 
-ID: Unique identifier of each user.
+- ID: Unique identifier of each user.
 
 ## Indexes:
 
-Primary: ID - Unique identifier of each user.
-username: Username - Unique username of each user.
+- Primary: ID - Unique identifier of each user.
+- username: Username - Unique username of each user.
 
 ## Relationships:
 

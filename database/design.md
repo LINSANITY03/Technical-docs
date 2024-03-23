@@ -45,6 +45,12 @@ User table contains all the information about the user accounts. The purpose of 
 
 ## Additional Notes:
 
-By default, password are hashed with PBKDF2 algorithm with a SHA256 hash
+[!NOTE]
 
+> By default, password are hashed with PBKDF2 algorithm with a SHA256 hash
+
+</details>
+
+<details>
+<summary></summary>
 </details>

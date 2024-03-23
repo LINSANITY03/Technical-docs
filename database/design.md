@@ -39,8 +39,9 @@ User table contains all the information about the user accounts. The purpose of 
 
 ## Sample Data:
 
-| Id | Username | Password | Last_login | First_name | Last_name | Email | is_active | Created_at | Address |
-| 1 | Hello1234 | pbkdf2_sha256$320000$hasd | 2023-02-19 06:45:50.492456 | Hello | World | helloworld12@example.com | 1 | 2022-06-15 06:18:40.721434 | london, UK |
+| Id  | Username  | Password                  | Last_login                 | First_name | Last_name | Email                    | is_active | Created_at                 | Address    |
+| --- | --------- | ------------------------- | -------------------------- | ---------- | --------- | ------------------------ | --------- | -------------------------- | ---------- |
+| 1   | Hello1234 | pbkdf2_sha256$320000$hasd | 2023-02-19 06:45:50.492456 | Hello      | World     | helloworld12@example.com | 1         | 2022-06-15 06:18:40.721434 | london, UK |
 
 ## Additional Notes:
 

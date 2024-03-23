@@ -98,4 +98,5 @@ The following diagram shows the one-to-many relationship between User and Emissi
 
 <p align="center">
   <img src="./erd.jpeg" alt="ERD diagram">
+  figure: ERD diagram(Lucidchart)
 </p>

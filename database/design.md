@@ -22,7 +22,7 @@ User table contains all the information about the user accounts. The purpose of 
 | Email      | Varchar   | User's registered email                                                 | Not Null, Unique                          |
 | is_active  | Boolean   | Bool value, True indicates whether the account is active and vice versa | Not Null                                  |
 | Created_at | Varchar   | Timestamp indicating the account creation                               | Not Null                                  |
-| Addresss   | Varchar   | Physical address of the user                                            | Not Null                                  |
+| Address    | Varchar   | Physical address of the user                                            | Not Null                                  |
 
 ## Primary Key:
 
@@ -91,3 +91,11 @@ Emission table contains the record of emissions registered by the user account w
 | 1   | 1       | Item A | 123 high street, london, UK | 321 low street, london, UK | 10       |            | 2023-02-01 09:15:25.048370 |
 
 </details>
+
+## ERD Diagram
+
+The following diagram shows the one-to-many relationship between User and Emission table
+
+<p align="center">
+  <img src="./erd.jpeg" alt="ERD diagram">
+</p>

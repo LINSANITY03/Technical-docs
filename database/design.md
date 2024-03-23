@@ -26,11 +26,11 @@ User table contains all the information about the user accounts. The purpose of 
 
 ## Primary Key:
 
-- ID: Unique identifier of each user.
+- Id: Unique identifier of each user.
 
 ## Indexes:
 
-- Primary: ID - Unique identifier of each user.
+- Primary: Id - Unique identifier of each user.
 - username: Username - Unique username of each user.
 
 ## Relationships:
@@ -51,4 +51,43 @@ By default, password are hashed with PBKDF2 algorithm with a SHA256 hash
 
 <details>
 <summary>Table Name: Emission</summary>
+
+Emission table contains the record of emissions registered by the user account which can be retrieve for complex calculations and visualization.
+
+## Fields
+
+| Field Name   | Data Type                                   | Description                                      | Constraints                               |
+| ------------ | ------------------------------------------- | ------------------------------------------------ | ----------------------------------------- |
+| Id           | Int                                         | Unique Identifier for each emission record       | Not Null, Unique, Auto Increment, Primary |
+| user_Id      | Identifier for relationship with user table | record                                           | Not Null, Foreign                         |
+| Item         | Varchar                                     | Emission category for each record                | Not Null                                  |
+| address_from | Varchar                                     | Starting point of the delivery                   | Not Null                                  |
+| address_to   | Varchar                                     | Destination point of the delivery                | Not Null                                  |
+| quantity     | BigInt                                      | Amount of goods to deliver                       | Not Null                                  |
+| updated_at   | datetime                                    | Timestamp indicating when the record was updated |                                           |
+| created_at   | datetime                                    | Timestamp indicating when the record was created | Not Null                                  |
+
+## Primary Key:
+
+- Id : Unique Identifier for each emission record
+
+## Foreign keys:
+
+- user_Id: User.Id - Identifier for relationship with user table
+
+## Indexes:
+
+- Primary: Id - Unique Identifier for each emission record
+- user_Id: user_Id - Identifier for relationship with user table
+
+## Relationships:
+
+**Emission** table has many-to-one relationship with **User** table.
+
+## Sample Data:
+
+| Id  | user_Id | Item   | address_from                | address_to                 | quantity | updated_at | created_at                 |
+| --- | ------- | ------ | --------------------------- | -------------------------- | -------- | ---------- | -------------------------- |
+| 1   | 1       | Item A | 123 high street, london, UK | 321 low street, london, UK | 10       |            | 2023-02-01 09:15:25.048370 |
+
 </details>

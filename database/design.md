@@ -56,16 +56,16 @@ Emission table contains the record of emissions registered by the user account w
 
 ## Fields
 
-| Field Name   | Data Type                                   | Description                                      | Constraints                               |
-| ------------ | ------------------------------------------- | ------------------------------------------------ | ----------------------------------------- |
-| Id           | Int                                         | Unique Identifier for each emission record       | Not Null, Unique, Auto Increment, Primary |
-| user_Id      | Identifier for relationship with user table | record                                           | Not Null, Foreign                         |
-| Item         | Varchar                                     | Emission category for each record                | Not Null                                  |
-| address_from | Varchar                                     | Starting point of the delivery                   | Not Null                                  |
-| address_to   | Varchar                                     | Destination point of the delivery                | Not Null                                  |
-| quantity     | BigInt                                      | Amount of goods to deliver                       | Not Null                                  |
-| updated_at   | datetime                                    | Timestamp indicating when the record was updated |                                           |
-| created_at   | datetime                                    | Timestamp indicating when the record was created | Not Null                                  |
+| Field Name   | Data Type | Description                                      | Constraints                               |
+| ------------ | --------- | ------------------------------------------------ | ----------------------------------------- | ----------------- |
+| Id           | Int       | Unique Identifier for each emission record       | Not Null, Unique, Auto Increment, Primary |
+| user_Id      | Int       | Identifier for relationship with user table      |                                           | Not Null, Foreign |
+| Item         | Varchar   | Emission category for each record                | Not Null                                  |
+| address_from | Varchar   | Starting point of the delivery                   | Not Null                                  |
+| address_to   | Varchar   | Destination point of the delivery                | Not Null                                  |
+| quantity     | BigInt    | Amount of goods to deliver                       | Not Null                                  |
+| updated_at   | datetime  | Timestamp indicating when the record was updated |                                           |
+| created_at   | datetime  | Timestamp indicating when the record was created | Not Null                                  |
 
 ## Primary Key:
 

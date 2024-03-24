@@ -77,7 +77,7 @@ JSON
 </details>
 
 <details>
-<summary>2. Update the selected emission record.
+<summary>2. Update the selected emission record.</summary>
 
 ## Endpoint
 
@@ -133,10 +133,10 @@ JSON
     }
 ```
 
-</summary>
+</details>
 
 <details>
-<summary>3. Delete the selected emission record.
+<summary>3. Delete the selected emission record.</summary>
 
 ## Endpoint
 
@@ -182,8 +182,10 @@ JSON
     }
 ```
 
+</details>
+
 <details>
-<summary>4. Add a emission record.
+<summary>4. Add a emission record.</summary>
 
 ## Endpoint
 
@@ -238,10 +240,10 @@ JSON
     }
 ```
 
-</summary>
+</details>
 
 <details>
-<summary>5. Get the calculation for data visualization.
+<summary>5. Get the calculation for data visualization.</summary>
 
 ## Endpoint
 
@@ -298,3 +300,5 @@ JSON
     }
 ]
 ```
+
+</details>

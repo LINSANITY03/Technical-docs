@@ -302,3 +302,7 @@ JSON
 ```
 
 </details>
+
+# Addititional Notes:
+
+Some of the API are long running API. To improve api usage, use a asynchronous approach as shown in example above or [view this reference](https://www.geeksforgeeks.org/how-to-fetch-data-from-apis-using-asynchronous-await-in-reactjs/).

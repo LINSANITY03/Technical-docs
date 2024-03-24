@@ -21,7 +21,7 @@ GET    /api/users/<int:user_id>
 
 ```
 
-    let response = await fetch("http://127.0.0.1:8000/users/${user_id}/", {
+    let response = await fetch("http://127.0.0.1:8000/api/users/${user_id}/", {
     method: "GET",
     headers: {
     "Content-Type": "application/json",
@@ -76,7 +76,7 @@ GET    /api/users/<int:user_id>
 
 ```
 
-    let response = await fetch("http://127.0.0.1:8000/users/${user_id}/", {
+    let response = await fetch("http://127.0.0.1:8000/api/users/${user_id}/", {
     method: "DELETE",
     headers: {
     "Content-Type": "application/json",
@@ -124,7 +124,7 @@ POST    /api/users/
 
 ```
 
-    let response = await fetch("http://127.0.0.1:8000/users/", {
+    let response = await fetch("http://127.0.0.1:8000/api/users/", {
     method: "POST",
     headers: {
     "Content-Type": "application/json",
@@ -177,7 +177,7 @@ PUT    /api/users/<int:user_id>
 
 ```
 
-    let response = await fetch("http://127.0.0.1:8000/users/${user_id}/", {
+    let response = await fetch("http://127.0.0.1:8000/api/users/${user_id}/", {
     method: "PUT",
     headers: {
     "Content-Type": "application/json",

@@ -17,3 +17,4 @@ Some of the recommendation for the Analysis page and measurement page for better
 2. Enable sorting, filtering on table using different metrics such as datetime, items or quantity. One example is the [Data Table](https://mui.com/material-ui/react-table/#data-table) from MaterialUI.
 3. For more readability, add a slightly different background for alternate rows on the table.
 4. Enable responsive and adaptation for different screen size.
+5. Add multiple selection option for easier modification/deletions.
